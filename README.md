@@ -9,3 +9,7 @@ It uses [Acquia recipe](https://docs.lando.dev/config/acquia.html) for Lando as 
 * Ability to enable disable XDEBUG
 * XHPROF (requires Drupal's [XHPROF module](https://www.drupal.org/project/xhprof))
 * PHP MyAdmin.
+
+## To Use
+* Copy .lando.yml and .lando directory in your codebase.
+* Replace `mysite` everywhere in .lando.yml with your project code.

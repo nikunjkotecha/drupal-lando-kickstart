@@ -22,7 +22,7 @@ services:
       - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && service apache2 reload
     overrides:
       environment:
-        PHP_IDE_CONFIG: "serverName=eenkotecha"
+        PHP_IDE_CONFIG: "serverName=mysite"
 
   inbox:
     app_mount: disabled
