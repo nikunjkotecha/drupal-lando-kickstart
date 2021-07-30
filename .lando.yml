@@ -16,6 +16,7 @@ services:
     build_as_root:
       - bash /app/.lando/scripts/configure-syslog.sh
       - bash /app/.lando/scripts/configure-xhprof.sh
+      - apt-get install vim -y
     run_as_root:
       # By default disable XDEBUG, we need it enabled to ensure all configurations are loaded.
       # Post this to enable disable lando xdebug-on and lando xdebug-off can be used.
@@ -38,8 +39,6 @@ proxy:
     - "pma.mysite.lndo.site"
 
 tooling:
-  vim:
-    service: myservice
   xdebug-on:
     service: appserver
     description: Enable xdebug for apache.
